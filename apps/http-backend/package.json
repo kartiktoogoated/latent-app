@@ -1,0 +1,27 @@
+{
+  "name": "latent-http-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -b",
+    "start": "NODE_ENV=production node dist/index.js",
+
+    "dev": "npm run build && npm run start"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/express": "^5.0.0",
+    "@types/express-serve-static-core": "^5.0.5",
+    "typescript": "^5.7.3"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/authenticator": "^1.1.4",
+    "authenticator": "^1.1.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "types": "^0.1.1"
+  }
+}
